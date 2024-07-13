@@ -20,8 +20,7 @@ module.exports = {
         cards: "url('../img/Main2.avif')",
       },
       fontFamily: {
-        primary: ['Black'],
-        secondary: ['Regular'],
+        primary: ['Raleway'],
       },
       colors: {
         primary: {

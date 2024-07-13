@@ -1,21 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: 'Black';
-    font-style: normal;
-    font-display: swap;
-    src: url(/font/ProximaNova-Black.woff2) format('woff2');
-  }
-  @font-face {
-    font-family: 'Regular';
-    font-style: normal;
-    font-display: swap;
-    src: url(/font/ProximaNova-Regular.woff2) format('woff2');
-  }
-}
+/*@layer base {*/
+/*  @font-face {*/
+/*    font-family: 'Black';*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*    src: url(/font/ProximaNova-Black.woff2) format('woff2');*/
+/*  }*/
+/*  @font-face {*/
+/*    font-family: 'Regular';*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*    src: url(/font/ProximaNova-Regular.woff2) format('woff2');*/
+/*  }*/
+/*}*/
 
 .clip-custom {
     clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 85%);;
@@ -34,7 +36,7 @@ html {
 }
 
 body {
-  @apply font-secondary text-[18px] text-secondary;
+  @apply font-primary text-[18px] text-secondary;
 }
 
 a {
@@ -42,7 +44,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-primary;
+  @apply font-primary font-extrabold;
 }
 
 .h1 {
