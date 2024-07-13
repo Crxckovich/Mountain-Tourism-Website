@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/output.css">
+
+    <link rel="apple-touch-icon" sizes="144x144" href="img/Fav-icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/Fav-icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/Fav-icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/Fav-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/Fav-icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Fav-icon/favicon-16x16.png">
+    <link rel="manifest" href="img/Fav-icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Горный туризм</title>
+    <meta name="description" content="Лучшие горные туры по России">
+</head>
+<body>
+    <!--Первая секция-->
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+        <!--header-->
+        <header class="relative top-0 h-[90px] z-30 bg-white shadow-xl">
+            <div class="container mx-auto flex justify-between h-full items-center">
+                <a href="#">
+                    <img src="img/icons/Logo.svg" alt="Изображение логотипа">
+                </a>
+                <nav>
+                    <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+                        <button class="group inline-flex w-12 h-12 text-slate-800 bg-white text-center items-center justify-center shadow hover:shadow-blue-500/50 hover:shadow rounded transition" aria-pressed="false" onclick="this.setAttribute('aria-pressed', !(this.getAttribute('aria-pressed') === 'true'))">
+                            <span class="sr-only">Menu</span>
+                            <svg class="w-6 h-6 fill-current pointer-events-none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="origin-center group-[[aria-pressed=true]]:rotate-[315deg] group-[[aria-pressed=true]]:[y:7] group-[[aria-pressed=true]]:[x:0] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)]" y="2" x="7" width="9" height="2" rx="1"></rect>
+                                <rect class="origin-center group-[[aria-pressed=true]]:rotate-45 transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)]" y="7" width="16" height="2" rx="1"></rect>
+                                <rect class="origin-center group-[[aria-pressed=true]]:rotate-[135deg] group-[[aria-pressed=true]]:[y:7] group-[[aria-pressed=true]]:[x:0] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)]" y="12" width="9" height="2" rx="1"></rect>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="absolute w-full h-0 p-0 overflow-hidden border-t top-[90px] bg-white left-0 right-0 flex flex-col gap-5 lg:relative font-bold lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300" id="nav_menu">
+                        <li><a href="#about-me">О нас</a></li>
+                        <li><a href="#best">Лучшие туры</a></li>
+                        <li><a href="#otziv">Отзывы</a></li>
+                        <li><a href="#bron">Забронировать</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--grid img-->
+        <div class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed"></div>
+        <!--Фото бэкграунд-->
+        <section class="hero h-[840px] !bg-hero bg-center lg:bg-cover bg-no-repeat clip-custom relative z-20 mb-[80px]">
+            <div class="container mx-auto h-full flex items-center justify-center">
+                <div class="hero__text flex flex-col items-center text-center xl:text-center lg:items-center">
+                    <h1 class="h1 text-white mix-blend-difference mb-20">ЛУЧШИЙ ГОРНЫЙ ТУРИЗМ</h1>
+                    <button class="btn btn-primary mx-auto xl:mx-0 shadow-xl">НАШ КАТАЛОГ <i class="ri-arrow-right-s-line text-accent"></i></button>
+                </div>
+            </div>
+        </section>
+        <!--о нас-->
+        <section id="about-me" class="about relative z-20 mb-[80px]">
+            <div class="container mx-auto xl:px-0">
+                <div class="flex flex-col text-center xl:flex-row xl:text-left justify-between items-center gap-8 xl:gap-[13px]">
+                    <div class="about__text flex-1 order-1 xl:order-none justify-items-start max-w-[24rem] xl:max-w-[510px] flex flex-col items-center xl:items-start gap-8">
+                        <h2 class="h2"><span class="bg-accent">НЕВЕРОЯТНЫЕ</span> ОЩУЩЕНИЯ СВОБОДЫ</h2>
+                        <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрениям и модернизации соответствующий условий активизации. Таким образом начало повседневной работы по формированию позиции влечет.</p>
+                        <h3 class="h3">ВВЕРХ НА 6000 МЕТРОВ НАД УРОВНЕМ МОРЯ</h3>
+                        <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрениям и модернизации соответствующий условий активизации. Таким образом начало повседневной работы по формированию позиции влечет.</p>
+                        <a href="#">УЗНАТЬ БОЛЬШЕ <i class="ri-arrow-right-s-line text-accent"></i></a>
+                    </div>
+                    <div class="about__img flex-2 flex-col max-w-[460px] order-2 xl:order-none">
+                        <div class="mb-10 shadow-xl">
+                            <img src="img/gora1.avif" alt="Изображение горы">
+                        </div>
+                        <div class="shadow-xl">
+                            <img src="img/gora2.avif" alt="Изображение горы">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Карточки-->
+        <section class="cards h-[640px] xl:h-[840px] bg-cards bg-center lg:bg-cover bg-no-repeat relative z-20 mb-[80px] clip-custom2">
+            <div class="container mx-auto h-full flex items-center justify-center">
+                <div class="grid grid-cols-2 xl:grid-cols-4 xl:gap-x-5">
+                    <!--Карточка-->
+                    <div class="card__item bg-white p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                        <div>
+                            <img src="img/icons/earth-fill.svg" alt="">
+                        </div>
+                        <h3 class="h3 mb-[8px]">ПРИКЛЮЧЕНИЕ</h3>
+                        <p class="leading-normal max-w-[300px]">Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
+                    </div>
+                    <!--Карточка-->
+                    <div class="card__item bg-white p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                        <div>
+                            <img src="img/icons/map-pin-fill.svg" alt="">
+                        </div>
+                        <h3 class="h3 mb-[8px]">ПРИКЛЮЧЕНИЕ</h3>
+                        <p class="leading-normal max-w-[300px]">Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
+                    </div>
+                    <!--Карточка-->
+                    <div class="card__item bg-white p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                        <div>
+                            <img src="img/icons/compass-fill.svg" alt="">
+                        </div>
+                        <h3 class="h3 mb-[8px]">МАРШРУТ</h3>
+                        <p class="leading-normal max-w-[300px]">Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
+                    </div>
+                    <!--Карточка-->
+                    <div class="card__item bg-white p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                        <div>
+                            <img src="img/icons/flag-fill.svg" alt="">
+                        </div>
+                        <h3 class="h3 mb-[8px]">ПИТАНИЕ</h3>
+                        <p class="leading-normal max-w-[300px]">Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ТУРЫ-->
+        <section id="best" class="tour relative z-20 mb-[80px]">
+            <div class="container mx-auto h-full px-0">
+                <h2 class="best__text h2 mb-9 text-center">НАШИ ЛУЧШИЕ ТУРЫ</h2>
+                <div class="best__grid grid grid-cols-1 xl:grid-cols-3 gap-x-[50px] gap-y-[50px]">
+                    <div class="w-full max-w-[24rem] rounded-xl shadow-lg mx-auto">
+                      <div class="relative clip-custom overflow-hidden rounded-xl">
+                        <img src="img/card/card1.avif" alt="Карточка"/>
+                      </div>
+                      <div class="p-6">
+                        <div class="mb-3 flex items-center justify-between">
+                          <h5 class="h2 text-base"><span class="bg-accent">Групповой</span> поход</h5>
+                          <p class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900"><i class="ri-star-smile-fill"></i>
+                            5.0</p>
+                        </div>
+                        <p class="block font-sans text-base">
+                          Задача организации, в особенности же дальнейшее развитие различных в особенности же развитие различных
+                        </p>
+                      </div>
+                      <div class="p-6 pt-3">
+                        <button class="btn-accent block w-full rounded-lg py-3.5 px-7 text-center align-middle text-sm uppercase text-white transition duration-300 shadow-md hover:shadow-lg active:opacity-[0.85]">5500 РУБЛЕЙ</button>
+                      </div>
+                    </div>
+                    <div class="w-full max-w-[24rem] rounded-xl shadow-lg mx-auto">
+                      <div class="relative overflow-hidden rounded-xl">
+                        <img src="img/card/card2.avif" alt="Карточка"/>
+                      </div>
+                      <div class="p-6">
+                        <div class="mb-3 flex items-center justify-between">
+                          <h5 class="h2 text-base"><span class="bg-accent">Частный</span> поход</h5>
+                          <p class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900"><i class="ri-star-smile-fill"></i>
+                            5.0</p>
+                        </div>
+                        <p class="block font-sans text-base">
+                          Задача организации, в особенности же дальнейшее развитие различных в особенности же развитие различных
+                        </p>
+                      </div>
+                      <div class="p-6 pt-3">
+                        <button class="btn-accent block w-full rounded-lg py-3.5 px-7 text-center align-middle text-sm uppercase text-white transition duration-300 shadow-md hover:shadow-lg active:opacity-[0.85]">5500 РУБЛЕЙ</button>
+                      </div>
+                    </div>
+                    <div class="w-full max-w-[24rem] rounded-xl shadow-lg mx-auto">
+                      <div class="relative clip-custom3 overflow-hidden rounded-xl">
+                        <img src="img/card/card3.avif" alt="Карточка"/>
+                      </div>
+                      <div class="p-6">
+                        <div class="mb-3 flex items-center justify-between">
+                          <h5 class="h2 text-base"><span class="bg-accent">Смотровая</span> башня</h5>
+                          <p class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900"><i class="ri-star-smile-fill"></i>
+                            5.0</p>
+                        </div>
+                        <p class="block font-sans text-base">
+                          Задача организации, в особенности же дальнейшее развитие различных в особенности же развитие различных
+                        </p>
+                      </div>
+                      <div class="p-6 pt-3">
+                        <button class="btn-accent block w-full rounded-lg py-3.5 px-7 text-center align-middle text-sm uppercase text-white transition duration-300 shadow-md hover:shadow-lg active:opacity-[0.85]">5500 РУБЛЕЙ</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ОТЗЫВЫ-->
+        <section id="otziv" class="otziv relative z-20 mb-[80px]">
+            <div class="otziv__bg container mx-auto bg-accent rounded-2xl px-6 shadow-xl">
+                <div class="flex flex-col items-center pt-[88px] pb-[110px]">
+                    <h2 class="otziv__text h2 mb-9 text-center">Что говорят наши клиенты</h2>
+                    <div class="w-full">
+                    <div class="otziv__slider swiper h-[400px]">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto">
+                                    <div class="flex gap-4 mb-6 h-[30%]">
+                                        <img src="img/otziv/01.webp" alt="">
+                                        <div>
+                                            <h3 class="h3">Антон Грибков</h3>
+                                            <div>Вашингтон, Россия</div>
+                                        </div>
+                                    </div>
+                                    <p>Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto">
+                                    <div class="flex gap-4 mb-6 h-[30%]">
+                                        <img src="img/otziv/02.webp" alt="">
+                                        <div>
+                                            <h3 class="h3">Александр Токарев</h3>
+                                            <div>Нью-Йорк, Россия</div>
+                                        </div>
+                                    </div>
+                                    <p>Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto">
+                                    <div class="flex gap-4 mb-6 h-[30%]">
+                                        <img src="img/otziv/03.webp" alt="">
+                                        <div>
+                                            <h3 class="h3">Антон Грибков-Фронтенд</h3>
+                                            <div>Киев, Россия</div>
+                                        </div>
+                                    </div>
+                                    <p>Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto">
+                                    <div class="flex gap-4 mb-6 h-[30%]">
+                                        <img src="img/otziv/04.webp" alt="">
+                                        <div>
+                                            <h3 class="h3">БАРАБАНЩИК</h3>
+                                            <div>Калифорния, Россия</div>
+                                        </div>
+                                    </div>
+                                    <p>Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact-->
+        <section id="bron" class="bg-gray-300 contact h-[940px] xl:h-[840px] relative z-20 mb-[80px]">
+            <video class="pointer-events-none absolute inset-0 w-full h-full object-cover brightness-75" autoplay loop muted>
+                <source src="img/Video.webm" type="video/mp4">
+            </video>
+            <div class="container mx-auto h-full flex items-center justify-center">
+                <div>
+                    <div class="contact__grid grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-[1200px] bg-white bg-opacity-50 backdrop-blur-lg shadow-xl rounded-xl text-[#333] font-[sans-serif]">
+                        <div>
+                            <h2 class="h4 mb-3">ЗАБРОНИРОВАТЬ ТУР</h2>
+                            <p class="text-primary leading-normal">Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации новых предложений.</p>
+                            <div class="mt-12">
+                                <h2 class="text-lg">Почта</h2>
+                                <ul class="mt-3">
+                                    <li class="flex items-center">
+                                        <div class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                            <i class="ri-mail-fill"></i>
+                                        </div>
+                                        <a target="blank" href="https://vk.com/id544602562" class="text-primary hover:text-primary-hover text-sm ml-3">
+                                            <small class="block">Личная страница</small>
+                                            <strong>ДИЗАЙНЕРА</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-12">
+                                <h2 class="text-lg">Соц-сети</h2>
+                                <ul class="flex mt-3 space-x-4">
+                                    <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                        <i class="ri-telegram-fill"></i>
+                                    </li>
+                                    <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                        <i class="ri-whatsapp-fill"></i>
+                                    </li>
+                                    <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                        <i class="ri-youtube-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <form class="ml-auo space-y-4">
+                            <label>
+                                <input type='text' placeholder='Имя'
+                                       class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff] mb-4" />
+                            </label>
+                            <label for="email" class="mb-5">
+                              <input class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="... peer"
+                                placeholder="Почта"
+                                required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                              />
+                              <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+                                Напишите правильный адрес почты
+                              </span>
+                            </label>
+                            <textarea placeholder='Сообщение' rows="6"
+                                   class="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"></textarea>
+                            <button class="btn btn-primary w-full justify-center mx-auto xl:mx-0 shadow-xl">ОТПРАВИТЬ <i class="ri-arrow-right-s-line text-accent"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        <section class="footer relative z-20">
+            <div class="container mx-auto px-0">
+                <div class="flex flex-col">
+                    <div class="footer__item w-full mx-auto mb-8 flex justify-center">
+                        <a href="#">
+                            <img src="img/icons/Logo.svg" alt="Изображение логотипа">
+                        </a>
+                    </div>
+                    <div>
+                        <ul class="flex flex-col xl:flex-row items-center justify-center transition-all duration-300 gap-5 mb-10">
+                            <li><a href="#about-me">О нас</a></li>
+                            <li><a href="#best">Лучшие туры</a></li>
+                            <li><a href="#otziv">Отзывы</a></li>
+                            <li><a href="#bron">Забронировать</a></li>
+                        </ul>
+                        <ul class="flex flex-col xl:flex-row items-center justify-center transition-all duration-300 gap-5">
+                            <li>© Все права защищены</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Конец первой секции-->
+    <script src="js/cdn.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</body>
+</html>
