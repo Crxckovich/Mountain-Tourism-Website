@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
 /*
 ! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
@@ -975,6 +975,10 @@ video {
   background-image: url('../img/Main2.avif');
 }
 
+.bg-fixed{
+  background-attachment: fixed;
+}
+
 .bg-center{
   background-position: center;
 }
@@ -1095,10 +1099,6 @@ video {
   line-height: 1.25rem;
 }
 
-.font-bold{
-  font-weight: 700;
-}
-
 .font-normal{
   font-weight: 400;
 }
@@ -1214,34 +1214,6 @@ video {
   transition-timing-function: cubic-bezier(.5,.85,.25,1.8);
 }
 
-/*@layer base {*/
-
-/*  @font-face {*/
-
-/*    font-family: 'Black';*/
-
-/*    font-style: normal;*/
-
-/*    font-display: swap;*/
-
-/*    src: url(/font/ProximaNova-Black.woff2) format('woff2');*/
-
-/*  }*/
-
-/*  @font-face {*/
-
-/*    font-family: 'Regular';*/
-
-/*    font-style: normal;*/
-
-/*    font-display: swap;*/
-
-/*    src: url(/font/ProximaNova-Regular.woff2) format('woff2');*/
-
-/*  }*/
-
-/*}*/
-
 .clip-custom {
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 85%);
 }
@@ -1263,7 +1235,7 @@ html:focus{
 }
 
 body{
-  font-family: Raleway;
+  font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
 }
@@ -1281,7 +1253,7 @@ a:hover{
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: Raleway;
+  font-family: Montserrat;
   font-weight: 800;
 }
 
