@@ -967,16 +967,12 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
-.\!bg-hero{
-  background-image: url('../img/Main-img.avif') !important;
-}
-
 .bg-cards{
   background-image: url('../img/Main2.avif');
 }
 
-.bg-fixed{
-  background-attachment: fixed;
+.bg-hero{
+  background-image: url('../img/Main-img.avif');
 }
 
 .bg-center{
@@ -1476,6 +1472,10 @@ h1, h2, h3, h4, h5, h6{
   .xl\:gap-x-5{
     -moz-column-gap: 1.25rem;
          column-gap: 1.25rem;
+  }
+
+  .xl\:bg-fixed{
+    background-attachment: fixed;
   }
 
   .xl\:bg-center{
