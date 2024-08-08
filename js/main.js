@@ -31,25 +31,26 @@ const swiper = new Swiper('.swiper', {
 const sr = ScrollReveal({
     origin: 'bottom',
     distance: '60px',
-    duration: 1700,
-    delay: 600,
+    duration: 1300,
+    delay: 220,
 })
 
 sr.reveal('.about__text', { origin: 'left'});
 sr.reveal('.about__img', { origin: 'right'});
+sr.reveal('.header', { origin: 'top'});
 
 sr.reveal('.card__item', { distance: '100px', interval: 100 });
 
 sr.reveal('.best__text', {delay: 100});
 sr.reveal('.best__grid', {delay: 1000});
 
-sr.reveal('.otziv__bg', {delay: 600});
+sr.reveal('.otziv__bg', {delay: 220});
 sr.reveal('.otziv__text');
 sr.reveal('.otziv__slider', {delay: 1000});
 
-sr.reveal('.contact__grid', {delay: 600});
+sr.reveal('.contact__grid', {delay: 220});
 
-sr.reveal('.footer__item', {delay: 600});
+sr.reveal('.footer__item', {delay: 220});
 
 const img = new Image();
 img.fetchPriority = "high";

@@ -17,7 +17,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('../img/Main-img.avif')" ,
+        hero_sred: "url('../img/Main-img-sred.avif')",
+        hero_min: "url('../img/Main-img-min.avif')" ,
         cards: "url('../img/Main2.avif')",
+        cards_sred: "url('../img/Main2-sred.avif')",
+        cards_min: "url('../img/Main2-min.avif')",
       },
       fontFamily: {
         primary: ['Montserrat'],

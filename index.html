@@ -19,34 +19,40 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <script defer src="js/cdn.min.js"></script>
+    <script defer src="js/scrollreveal.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+
     <title>Горный туризм</title>
     <meta name="description" content="Лучшие горные туры по России">
 </head>
 <body>
     <!--Первая секция-->
-    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+    <main class="max-w-[1920px] mx-auto bg-slate-50 overflow-hidden">
         <!--header-->
-        <header class="relative top-0 h-[90px] z-30 bg-white shadow-xl">
-            <div class="container mx-auto flex justify-between h-full items-center">
+        <header class="relative top-0 h-[90px] z-30 bg-slate-50 shadow-xl">
+            <div class="container mx-auto flex justify-between h-full items-center header">
                 <a href="#">
                     <img src="img/icons/Logo.svg" alt="Изображение логотипа">
                 </a>
                 <nav>
                     <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
-                        <button class="group inline-flex w-12 h-12 text-slate-800 bg-white text-center items-center justify-center shadow hover:shadow-blue-500/50 hover:shadow rounded transition" aria-pressed="false" onclick="this.setAttribute('aria-pressed', !(this.getAttribute('aria-pressed') === 'true'))">
+                        <button class="group inline-flex w-12 h-12 text-slate-800 bg-white text-center items-center justify-center shadow hover:shadow-accent hover:shadow rounded transition" aria-pressed="false" onclick="this.setAttribute('aria-pressed', !(this.getAttribute('aria-pressed') === 'true'))">
                             <span class="sr-only">Menu</span>
-                            <svg class="w-6 h-6 fill-current pointer-events-none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                <rect class="origin-center group-[[aria-pressed=true]]:rotate-[315deg] group-[[aria-pressed=true]]:[y:7] group-[[aria-pressed=true]]:[x:0] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)]" y="2" x="7" width="9" height="2" rx="1"></rect>
-                                <rect class="origin-center group-[[aria-pressed=true]]:rotate-45 transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)]" y="7" width="16" height="2" rx="1"></rect>
-                                <rect class="origin-center group-[[aria-pressed=true]]:rotate-[135deg] group-[[aria-pressed=true]]:[y:7] group-[[aria-pressed=true]]:[x:0] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)]" y="12" width="9" height="2" rx="1"></rect>
+                            <svg class="w-6 h-6 fill-current pointer-events-none mx-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="top-0 origin-center group-[[aria-pressed=true]]:rotate-[315deg] group-[[aria-pressed=true]]:[y:7] group-[[aria-pressed=true]]:[x:0] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)]" y="2" x="7" width="9" height="2" rx="1"></rect>
+                                <rect class="top-0 origin-center group-[[aria-pressed=true]]:rotate-45 transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)]" y="7" width="16" height="2" rx="1"></rect>
+                                <rect class="top-0 origin-center group-[[aria-pressed=true]]:rotate-[135deg] group-[[aria-pressed=true]]:[y:7] group-[[aria-pressed=true]]:[x:0] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)]" y="12" width="9" height="2" rx="1"></rect>
                             </svg>
                         </button>
                     </div>
-                    <ul class="absolute w-full h-0 p-0 overflow-hidden border-t top-[90px] bg-white left-0 right-0 flex flex-col gap-5 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300" id="nav_menu">
+                    <ul class="absolute w-full h-0 p-0 overflow-hidden border-t top-[90px] bg-slate-50 left-0 right-0 flex flex-col gap-5
+                    lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300" id="nav_menu">
                         <li><a href="#about-me">О нас</a></li>
                         <li><a href="#best">Лучшие туры</a></li>
                         <li><a href="#otziv">Отзывы</a></li>
-                        <li><a href="#bron">Забронировать</a></li>
+                        <li><a href="#bron"><span class="border-b-4 border-[#2CA9BC]">Забронировать</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,11 +60,11 @@
         <!--grid img-->
         <div class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed"></div>
         <!--Фото бэкграунд-->
-        <section class="hero h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat clip-custom relative z-20 mb-[80px]">
+        <section class="hero h-[840px] bg-hero_min md:bg-hero_sred xl:bg-hero bg-center bg-cover bg-no-repeat clip-custom relative z-20 mb-[80px]">
             <div class="container mx-auto h-full flex items-center justify-center">
                 <div class="hero__text flex flex-col items-center text-center xl:text-center lg:items-center">
-                    <h1 class="h1 text-white mix-blend-difference mb-20">ЛУЧШИЙ ГОРНЫЙ ТУРИЗМ</h1>
-                    <button class="btn btn-primary mx-auto xl:mx-0 shadow-xl">НАШ КАТАЛОГ <i class="ri-arrow-right-s-line text-accent"></i></button>
+                    <h1 class="h1 text-white mix-blend-difference mb-20 select-none">ЛУЧШИЙ ГОРНЫЙ ТУРИЗМ</h1>
+                    <button class="btn btn-primary mx-auto xl:mx-0 shadow xl:hover:shadow-lg transition-all xl:hover:-translate-y-2">НАШ КАТАЛОГ <i class="ri-arrow-right-s-line text-accent"></i></button>
                 </div>
             </div>
         </section>
@@ -74,22 +80,24 @@
                         <a href="#">УЗНАТЬ БОЛЬШЕ <i class="ri-arrow-right-s-line text-accent"></i></a>
                     </div>
                     <div class="about__img flex-2 flex-col max-w-[460px] order-2 xl:order-none">
-                        <div class="mb-10 shadow-xl">
-                            <img src="img/gora1.avif" alt="Изображение горы">
+                        <div class="mb-10 shadow xl:hover:shadow-lg transition-all xl:hover:-translate-y-3 duration-300">
+                            <img src="img/gora1-min.avif"
+                                 alt="Изображение горы">
                         </div>
-                        <div class="shadow-xl">
-                            <img src="img/gora2.avif" alt="Изображение горы">
+                        <div class="shadow xl:hover:shadow-lg transition-all xl:hover:-translate-y-3 duration-300">
+                            <img src="img/gora2-min.avif"
+                                 alt="Изображение горы">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--Карточки-->
-        <section class="cards h-[640px] xl:h-[840px] bg-cards bg-center lg:bg-cover bg-no-repeat relative z-20 mb-[80px] clip-custom2">
+        <section class="cards h-[1080px] xl:h-[840px] bg-cards_min md:bg-cards_sred xl:bg-cards bg-center bg-cover bg-no-repeat relative z-20 mb-[80px] clip-custom2">
             <div class="container mx-auto h-full flex items-center justify-center">
-                <div class="grid grid-cols-2 xl:grid-cols-4 xl:gap-x-5">
+                <div class="grid grid-cols-1 gap-1 lg:grid-cols-4 xl:gap-x-5">
                     <!--Карточка-->
-                    <div class="card__item bg-white p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                    <div class="card__item bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
                         <div>
                             <img src="img/icons/earth-fill.svg" alt="">
                         </div>
@@ -97,7 +105,7 @@
                         <p class="leading-normal max-w-[300px]">Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
                     </div>
                     <!--Карточка-->
-                    <div class="card__item bg-white p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                    <div class="card__item bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
                         <div>
                             <img src="img/icons/map-pin-fill.svg" alt="">
                         </div>
@@ -105,7 +113,7 @@
                         <p class="leading-normal max-w-[300px]">Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
                     </div>
                     <!--Карточка-->
-                    <div class="card__item bg-white p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                    <div class="card__item bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
                         <div>
                             <img src="img/icons/compass-fill.svg" alt="">
                         </div>
@@ -113,7 +121,7 @@
                         <p class="leading-normal max-w-[300px]">Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
                     </div>
                     <!--Карточка-->
-                    <div class="card__item bg-white p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                    <div class="card__item bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
                         <div>
                             <img src="img/icons/flag-fill.svg" alt="">
                         </div>
@@ -128,7 +136,7 @@
             <div class="container mx-auto h-full px-0">
                 <h2 class="best__text h2 mb-9 text-center">НАШИ ЛУЧШИЕ ТУРЫ</h2>
                 <div class="best__grid grid grid-cols-1 xl:grid-cols-3 gap-x-[50px] gap-y-[50px]">
-                    <div class="w-full max-w-[24rem] rounded-xl shadow-lg mx-auto">
+                    <div class="w-full max-w-[24rem] rounded-xl shadow mx-auto xl:hover:shadow-lg transition-all">
                       <div class="relative clip-custom overflow-hidden rounded-xl">
                         <img src="img/card/card1.avif" alt="Карточка"/>
                       </div>
@@ -146,7 +154,7 @@
                         <button class="btn-accent block w-full rounded-lg py-3.5 px-7 text-center align-middle text-sm uppercase text-white transition duration-300 shadow-md hover:shadow-lg active:opacity-[0.85]">5500 РУБЛЕЙ</button>
                       </div>
                     </div>
-                    <div class="w-full max-w-[24rem] rounded-xl shadow-lg mx-auto">
+                    <div class="w-full max-w-[24rem] rounded-xl shadow mx-auto xl:hover:shadow-lg transition-all">
                       <div class="relative overflow-hidden rounded-xl">
                         <img src="img/card/card2.avif" alt="Карточка"/>
                       </div>
@@ -164,7 +172,7 @@
                         <button class="btn-accent block w-full rounded-lg py-3.5 px-7 text-center align-middle text-sm uppercase text-white transition duration-300 shadow-md hover:shadow-lg active:opacity-[0.85]">5500 РУБЛЕЙ</button>
                       </div>
                     </div>
-                    <div class="w-full max-w-[24rem] rounded-xl shadow-lg mx-auto">
+                    <div class="w-full max-w-[24rem] rounded-xl shadow mx-auto xl:hover:shadow-lg transition-all">
                       <div class="relative clip-custom3 overflow-hidden rounded-xl">
                         <img src="img/card/card3.avif" alt="Карточка"/>
                       </div>
@@ -194,10 +202,12 @@
                     <div class="otziv__slider swiper h-[400px]">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto">
-                                    <div class="flex gap-4 mb-6 h-[30%]">
-                                        <img src="img/otziv/01.webp" alt="">
-                                        <div>
+                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
+                                    <div class="grid grid-cols-[80px_1fr] gap-4 mb-6 h-[32%] grid-rows-1">
+                                        <div class="content-center">
+                                            <img src="img/otziv/01.webp" alt="">
+                                        </div>
+                                        <div class="content-center">
                                             <h3 class="h3">Антон Грибков</h3>
                                             <div>Вашингтон, Россия</div>
                                         </div>
@@ -206,23 +216,27 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto">
-                                    <div class="flex gap-4 mb-6 h-[30%]">
-                                        <img src="img/otziv/02.webp" alt="">
-                                        <div>
+                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
+                                    <div class="grid grid-cols-[80px_1fr] gap-4 mb-6 h-[32%] grid-rows-1">
+                                        <div class="content-center">
+                                            <img src="img/otziv/02.webp" alt="">
+                                        </div>
+                                        <div class="content-center">
                                             <h3 class="h3">Александр Токарев</h3>
-                                            <div>Нью-Йорк, Россия</div>
+                                            <div>Нью-йорк, Россия</div>
                                         </div>
                                     </div>
                                     <p>Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto">
-                                    <div class="flex gap-4 mb-6 h-[30%]">
-                                        <img src="img/otziv/03.webp" alt="">
-                                        <div>
-                                            <h3 class="h3">Антон Грибков-Фронтенд</h3>
+                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
+                                    <div class="grid grid-cols-[80px_1fr] gap-4 mb-6 h-[32%] grid-rows-1">
+                                        <div class="content-center">
+                                            <img src="img/otziv/03.webp" alt="">
+                                        </div>
+                                        <div class="content-center">
+                                            <h3 class="h3">Жак-Давид</h3>
                                             <div>Флорида, Россия</div>
                                         </div>
                                     </div>
@@ -230,12 +244,14 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto">
-                                    <div class="flex gap-4 mb-6 h-[30%]">
-                                        <img src="img/otziv/04.webp" alt="">
-                                        <div>
-                                            <h3 class="h3">БАРАБАНЩИК</h3>
-                                            <div>Калифорния, Россия</div>
+                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
+                                    <div class="grid grid-cols-[80px_1fr] gap-4 mb-6 h-[32%] grid-rows-1">
+                                        <div class="content-center">
+                                            <img src="img/otziv/04.webp" alt="">
+                                        </div>
+                                        <div class="content-center">
+                                            <h3 class="h3">Дмитрий Масленников</h3>
+                                            <div>Кальфорния, Россия</div>
                                         </div>
                                     </div>
                                     <p>Задача организации, в особенности же iogh ishhg hsiklgh))))</p>
@@ -249,13 +265,14 @@
             </div>
         </section>
         <!--Contact-->
-        <section id="bron" class="bg-gray-300 contact h-[940px] xl:h-[840px] relative z-20 mb-[80px]">
+        <section id="bron" class="bg-gray-300 contact h-[1080px] xl:h-[840px] relative z-20 mb-[80px]">
             <video class="pointer-events-none absolute inset-0 w-full h-full object-cover brightness-75" autoplay loop muted>
-                <source src="img/Video.webm" type="video/mp4">
+                <source src="img/Video.webm" type="video/webm">
+                <source src="img/Video.mp4" type="video/mp4">
             </video>
-            <div class="container mx-auto h-full flex items-center justify-center">
+            <div class="container mx-auto h-full flex max-w-[1230px] items-center justify-center">
                 <div>
-                    <div class="contact__grid grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-[1200px] bg-white bg-opacity-50 backdrop-blur-lg shadow-xl rounded-xl text-[#333]">
+                    <div class="contact__grid border border-gray-300 grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto bg-white bg-opacity-50 backdrop-blur-lg shadow-xl rounded-xl text-[#333]">
                         <div>
                             <h2 class="h4 mb-3">ЗАБРОНИРОВАТЬ ТУР</h2>
                             <p class="text-primary leading-normal">Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации новых предложений.</p>
@@ -317,7 +334,7 @@
             </div>
         </section>
         <!--Footer-->
-        <section class="footer relative z-20">
+        <section class="footer relative z-20 pb-[80px]">
             <div class="container mx-auto px-0">
                 <div class="flex flex-col">
                     <div class="footer__item w-full mx-auto mb-8 flex justify-center">
@@ -330,10 +347,10 @@
                             <li><a href="#about-me">О нас</a></li>
                             <li><a href="#best">Лучшие туры</a></li>
                             <li><a href="#otziv">Отзывы</a></li>
-                            <li><a href="#bron">Забронировать</a></li>
+                            <li><a href="#bron"><span class="border-b-4 border-[#2CA9BC]">Забронировать</span></a></li>
                         </ul>
                         <ul class="flex flex-col xl:flex-row items-center justify-center transition-all duration-300 gap-5">
-                            <li>© Все права защищены</li>
+                            <li class="select-none">© Все права защищены</li>
                         </ul>
                     </div>
                 </div>
@@ -341,10 +358,6 @@
         </section>
     </main>
     <!--Конец первой секции-->
-    <script src="js/cdn.min.js"></script>
-    <script src="js/scrollreveal.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </body>
