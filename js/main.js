@@ -55,3 +55,12 @@ sr.reveal('.footer__item', {delay: 220});
 const img = new Image();
 img.fetchPriority = "high";
 img.src = "img/Main-img.avif";
+
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.querySelector('button[aria-pressed]');
+
+    button.addEventListener('click', function() {
+        const isPressed = this.getAttribute('aria-pressed') === 'true';
+        this.setAttribute('aria-pressed', !isPressed);
+    });
+});
