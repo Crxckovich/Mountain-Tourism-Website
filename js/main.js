@@ -3,6 +3,7 @@ const navMenu = document.querySelector('#nav_menu');
 
 navTriggerBtn.addEventListener('click', ()=> {
     navMenu.classList.toggle('nav-is-open');
+    navMenu.classList.toggle('border-t');
 });
 
 
