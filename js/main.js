@@ -15,6 +15,11 @@ const swiper = new Swiper('.swiper', {
     },
     slidesPerView: 3,
     spaceBetween: 20,
+    autoplay: {
+        delay: 3500,
+        pauseOnMouseEnter: true,
+    },
+    speed: 650,
     breakpoints: {
         320: {
             slidesPerView: 1,
