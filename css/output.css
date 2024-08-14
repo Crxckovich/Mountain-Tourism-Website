@@ -756,8 +756,8 @@ video {
   height: 1080px;
 }
 
-.h-\[1400px\]{
-  height: 1400px;
+.h-\[1200px\]{
+  height: 1200px;
 }
 
 .h-\[32\%\]{
@@ -808,6 +808,10 @@ video {
   max-width: 1920px;
 }
 
+.max-w-\[22rem\]{
+  max-width: 22rem;
+}
+
 .max-w-\[24rem\]{
   max-width: 24rem;
 }
@@ -822,6 +826,22 @@ video {
 
 .max-w-\[470px\]{
   max-width: 470px;
+}
+
+.max-w-\[21rem\]{
+  max-width: 21rem;
+}
+
+.max-w-\[20rem\]{
+  max-width: 20rem;
+}
+
+.max-w-\[19rem\]{
+  max-width: 19rem;
+}
+
+.max-w-\[18rem\]{
+  max-width: 18rem;
 }
 
 .flex-1{
@@ -1286,8 +1306,14 @@ html:focus{
 
 body{
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
+}
+
+@media (min-width: 960px){
+  body{
+    font-size: 18px;
+  }
 }
 
 a{
@@ -1319,7 +1345,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .h2{
-  font-size: 45px;
+  font-size: 40px;
   line-height: 1.25;
 }
 
@@ -1336,17 +1362,25 @@ h1, h2, h3, h4, h5, h6{
 
 .btn{
   display: flex;
-  height: 75px;
+  height: 65px;
   align-items: center;
   gap: 0.5rem;
   border-radius: 18px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+}
+
+@media (min-width: 960px){
+  .btn{
+    height: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .btn-primary{
