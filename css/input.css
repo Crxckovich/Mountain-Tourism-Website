@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  @apply h-[65px] lg:h-[75px] px-[25px] lg:px-[30px] transition-all duration-300 text-white rounded-[18px] flex items-center gap-2;
+  @apply h-[65px] lg:h-[75px] px-[25px] lg:px-[30px] transition-all duration-300 text-white ring-1 ring-slate-900/5 rounded-[18px] flex items-center gap-2;
 }
 
 .btn-primary {

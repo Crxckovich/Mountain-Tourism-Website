@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="preload" as="image" href="img/Main-img.avif">
-    <link rel="stylesheet" href="css/output.css">
-
+    <link fetchpriority rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="apple-touch-icon" sizes="144x144" href="img/Fav-icon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/Fav-icon/apple-icon-152x152.png">
@@ -62,16 +60,16 @@
         </header>
         <!--grid img-->
         <div class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed"></div>
-        <!--Фото бэкграунд-->
+        <!--Hero-->
         <section class="hero h-[840px] bg-hero_min md:bg-hero_sred xl:bg-hero bg-center bg-cover bg-no-repeat clip-custom relative z-20 mb-[80px]">
             <div class="container mx-auto h-full flex items-center justify-center">
                 <div class="hero__text flex flex-col items-center text-center xl:text-center lg:items-center">
-                    <h1 class="h1 text-white mix-blend-difference mb-20 select-none">ЛУЧШИЙ ГОРНЫЙ ТУРИЗМ</h1>
+                    <h1 class="h1 text-white mix-blend-difference mb-24 select-none">ЛУЧШИЙ ГОРНЫЙ ТУРИЗМ</h1>
                     <button class="btn btn-primary mx-auto xl:mx-0 shadow xl:hover:shadow-lg transition-all xl:hover:-translate-y-2">НАШ КАТАЛОГ <i class="ri-arrow-right-s-line text-accent"></i></button>
                 </div>
             </div>
         </section>
-        <!--о нас-->
+        <!--Content-->
         <section id="about-me" class="about relative z-20 mb-[80px]">
             <div class="container mx-auto xl:px-0">
                 <div class="flex flex-col text-center xl:flex-row xl:text-left justify-between items-center gap-8 xl:gap-[13px]">
@@ -83,24 +81,26 @@
                         <a href="#">УЗНАТЬ БОЛЬШЕ <i class="ri-arrow-right-s-line text-accent"></i></a>
                     </div>
                     <div class="about__img flex-2 flex-col max-w-[460px] order-2 xl:order-none">
-                        <div class="mb-10 shadow xl:hover:shadow-lg transition-all xl:hover:-translate-y-3 duration-300">
+                        <div class="mb-8 shadow xl:hover:shadow-lg transition-all xl:hover:-translate-y-3 duration-300">
                             <img src="img/gora1-min.avif"
-                                 alt="Изображение горы">
+                                 data-src="img/gora1.avif"
+                                 alt="Изображение горы" loading="lazy" class="blur-lg">
                         </div>
                         <div class="shadow xl:hover:shadow-lg transition-all xl:hover:-translate-y-3 duration-300">
                             <img src="img/gora2-min.avif"
-                                 alt="Изображение горы">
+                                 data-src="img/gora2.avif"
+                                 alt="Изображение горы" loading="lazy" class="blur-lg">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Карточки-->
+        <!--Cards-->
         <section class="cards h-[1200px] xl:h-[840px] bg-cards_min md:bg-cards_sred xl:bg-cards bg-center bg-cover bg-no-repeat relative z-20 mb-[80px] clip-custom2">
             <div class="container mx-auto h-full flex items-center justify-center">
-                <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-4 xl:gap-x-5">
+                <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-2 lg:gap-x-4 xl:grid-cols-4">
                     <!--Карточка-->
-                    <div class="card__item bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                    <div class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
                         <div>
                             <img src="img/icons/earth-fill.svg" alt="">
                         </div>
@@ -108,7 +108,7 @@
                         <p class="leading-normal max-w-[300px]">Товарищи! Задача организации способствует подготовки и реализации новых предложений.</p>
                     </div>
                     <!--Карточка-->
-                    <div class="card__item bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                    <div class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
                         <div>
                             <img src="img/icons/map-pin-fill.svg" alt="">
                         </div>
@@ -116,7 +116,7 @@
                         <p class="leading-normal max-w-[300px]">Товарищи! Задача организации способствует подготовки и реализации новых предложений.</p>
                     </div>
                     <!--Карточка-->
-                    <div class="card__item bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                    <div class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
                         <div>
                             <img src="img/icons/compass-fill.svg" alt="">
                         </div>
@@ -124,7 +124,7 @@
                         <p class="leading-normal max-w-[300px]">Товарищи! Задача организации способствует подготовки и реализации новых предложений.</p>
                     </div>
                     <!--Карточка-->
-                    <div class="card__item bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                    <div class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
                         <div>
                             <img src="img/icons/flag-fill.svg" alt="">
                         </div>
@@ -134,17 +134,19 @@
                 </div>
             </div>
         </section>
-        <!--ТУРЫ-->
+        <!--Tours-->
         <section id="best" class="tour relative z-20 mb-[80px]">
             <div class="container mx-auto h-full px-0">
-                <h2 class="best__text h2 mb-9 text-center">НАШИ ЛУЧШИЕ ТУРЫ</h2>
+                <h2 class="best__text h2 mb-8 text-center">НАШИ ЛУЧШИЕ ТУРЫ</h2>
                 <div class="best__grid grid grid-cols-1 xl:grid-cols-3 gap-x-[50px] gap-y-[50px]">
-                    <div class="w-full max-w-[24rem] rounded-xl shadow mx-auto xl:hover:shadow-lg transition-all">
+                    <div class="w-full max-w-[24rem] rounded-xl shadow mx-auto ring-1 ring-slate-900/5 xl:hover:shadow-lg transition-all">
                       <div class="relative clip-custom overflow-hidden rounded-xl">
-                        <img src="img/card/card1.avif" alt="Карточка"/>
+                        <img src="img/Blur-images/card/card1-lazy.avif"
+                             data-src="img/card/card1.avif"
+                             alt="Карточка" loading="lazy" class="blur-lg lg:blur-none"/>
                       </div>
                       <div class="p-6">
-                        <div class="mb-3 flex items-center justify-between">
+                        <div class="mb-4 flex items-center justify-between">
                           <h5 class="h2 text-base"><span class="bg-accent">Групповой</span> поход</h5>
                           <p class="flex items-center gap-1.5 text-base font-normal leading-relaxed text-blue-gray-900"><i class="ri-star-smile-fill"></i>
                             5.0</p>
@@ -157,12 +159,14 @@
                         <button class="btn-accent block w-full rounded-lg py-3.5 px-7 text-center align-middle text-sm uppercase text-white transition duration-300 shadow-md hover:shadow-lg active:opacity-[0.85]">5500 РУБЛЕЙ</button>
                       </div>
                     </div>
-                    <div class="w-full max-w-[24rem] rounded-xl shadow mx-auto xl:hover:shadow-lg transition-all">
+                    <div class="w-full max-w-[24rem] rounded-xl shadow mx-auto ring-1 ring-slate-900/5 xl:hover:shadow-lg transition-all">
                       <div class="relative overflow-hidden rounded-xl">
-                        <img src="img/card/card2.avif" alt="Карточка"/>
+                        <img src="img/Blur-images/card/card2-lazy.avif"
+                             data-src="img/card/card2.avif"
+                             alt="Карточка" loading="lazy" class="blur-lg lg:blur-none"/>
                       </div>
                       <div class="p-6">
-                        <div class="mb-3 flex items-center justify-between">
+                        <div class="mb-4 flex items-center justify-between">
                           <h5 class="h2 text-base"><span class="bg-accent">Частный</span> поход</h5>
                           <p class="flex items-center gap-1.5 text-base font-normal leading-relaxed text-blue-gray-900"><i class="ri-star-smile-fill"></i>
                             5.0</p>
@@ -175,12 +179,14 @@
                         <button class="btn-accent block w-full rounded-lg py-3.5 px-7 text-center align-middle text-sm uppercase text-white transition duration-300 shadow-md hover:shadow-lg active:opacity-[0.85]">5500 РУБЛЕЙ</button>
                       </div>
                     </div>
-                    <div class="w-full max-w-[24rem] rounded-xl shadow mx-auto xl:hover:shadow-lg transition-all">
+                    <div class="w-full max-w-[24rem] rounded-xl shadow mx-auto ring-1 ring-slate-900/5 xl:hover:shadow-lg transition-all">
                       <div class="relative clip-custom3 overflow-hidden rounded-xl">
-                        <img src="img/card/card3.avif" alt="Карточка"/>
+                        <img src="img/Blur-images/card/card3-lazy.avif"
+                             data-src="img/card/card3.avif"
+                             alt="Карточка" loading="lazy" class="blur-lg lg:blur-none"/>
                       </div>
                       <div class="p-6">
-                        <div class="mb-3 flex items-center justify-between">
+                        <div class="mb-4 flex items-center justify-between">
                           <h5 class="h2 text-base"><span class="bg-accent">Смотровая</span> башня</h5>
                           <p class="flex items-center gap-1.5 text-base font-normal leading-relaxed text-blue-gray-900"><i class="ri-star-smile-fill"></i>
                             5.0</p>
@@ -196,19 +202,21 @@
                 </div>
             </div>
         </section>
-        <!--ОТЗЫВЫ-->
+        <!--Reviews-->
         <section id="otziv" class="otziv relative z-20 mb-[80px]">
             <div class="otziv__bg container mx-auto bg-accent rounded-2xl px-6 shadow-xl">
                 <div class="flex flex-col items-center pt-[88px] pb-[110px]">
-                    <h2 class="otziv__text h2 mb-9 text-center">Что говорят наши клиенты 😊</h2>
+                    <h2 class="otziv__text h2 mb-8 text-center">Что говорят наши клиенты 😊</h2>
                     <div class="w-full">
                     <div class="otziv__slider swiper h-[400px]">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
+                                <div class="otziv__item w-full ring-1 ring-slate-900/5 max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
                                     <div class="grid grid-cols-[80px_1fr] gap-4 mb-6 h-[32%] grid-rows-1">
                                         <div class="content-center">
-                                            <img src="img/otziv/01.webp" alt="">
+                                            <img src="img/Blur-images/otziv-blur/01-lazy.webp"
+                                                 data-src="img/otziv/01.webp"
+                                                 alt="Avatar1" loading="lazy" class="blur-lg lg:blur-none">
                                         </div>
                                         <div class="content-center">
                                             <h3 class="h3">Антон Грибков</h3>
@@ -219,10 +227,12 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
+                                <div class="otziv__item w-full ring-1 ring-slate-900/5 max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
                                     <div class="grid grid-cols-[80px_1fr] gap-4 mb-6 h-[32%] grid-rows-1">
                                         <div class="content-center">
-                                            <img src="img/otziv/02.webp" alt="">
+                                            <img src="img/Blur-images/otziv-blur/02-lazy.webp"
+                                                 data-src="img/otziv/02.webp"
+                                                 alt="Avatar2" loading="lazy" class="blur-lg lg:blur-none">
                                         </div>
                                         <div class="content-center">
                                             <h3 class="h3">Александр Токарев</h3>
@@ -233,10 +243,12 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
+                                <div class="otziv__item w-full ring-1 ring-slate-900/5 max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
                                     <div class="grid grid-cols-[80px_1fr] gap-4 mb-6 h-[32%] grid-rows-1">
                                         <div class="content-center">
-                                            <img src="img/otziv/03.webp" alt="">
+                                            <img src="img/Blur-images/otziv-blur/03-lazy.webp"
+                                                 data-src="img/otziv/03.webp"
+                                                 alt="Avatar3" loading="lazy" class="blur-lg lg:blur-none">
                                         </div>
                                         <div class="content-center">
                                             <h3 class="h3">Жак-Давид</h3>
@@ -247,10 +259,12 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="otziv__item w-full max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
+                                <div class="otziv__item w-full ring-1 ring-slate-900/5 max-w-[470px] h-[340px] bg-white rounded-2xl flex flex-col justify-center p-9 mx-auto shadow xl:hover:shadow-lg transition-all">
                                     <div class="grid grid-cols-[80px_1fr] gap-4 mb-6 h-[32%] grid-rows-1">
                                         <div class="content-center">
-                                            <img src="img/otziv/04.webp" alt="">
+                                            <img src="img/Blur-images/otziv-blur/04-lazy.webp"
+                                                 data-src="img/otziv/04.webp"
+                                                 alt="Avatar4" loading="lazy" class="blur-lg lg:blur-none">
                                         </div>
                                         <div class="content-center">
                                             <h3 class="h3">Дмитрий Масленников</h3>
@@ -275,9 +289,9 @@
             </video>
             <div class="container mx-auto h-full flex max-w-[1230px] items-center justify-center">
                 <div>
-                    <div class="contact__grid border border-gray-300 grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto bg-white bg-opacity-50 backdrop-blur-lg shadow-xl rounded-xl text-[#333]">
+                    <div class="contact__grid ring-1 ring-slate-900/5 grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto bg-white bg-opacity-50 backdrop-blur-lg shadow-xl rounded-xl text-[#333]">
                         <div>
-                            <h2 class="h4 mb-3">ЗАБРОНИРОВАТЬ ТУР</h2>
+                            <h2 class="h4 mb-4">ЗАБРОНИРОВАТЬ ТУР</h2>
                             <p class="text-primary leading-normal">Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации новых предложений.</p>
                             <div class="mt-12">
                                 <h2 class="text-lg">Почта</h2>
@@ -286,7 +300,7 @@
                                         <div class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                             <i class="ri-mail-fill"></i>
                                         </div>
-                                        <a target="blank" href="https://vk.com/id544602562" class="text-primary hover:text-primary-hover text-sm ml-3">
+                                        <a target="blank" href="https://vk.com/id544602562" class="text-primary hover:text-secondary text-sm ml-3">
                                             <small class="block">Личная страница</small>
                                             <strong>ДИЗАЙНЕРА</strong>
                                         </a>
@@ -312,10 +326,10 @@
                         <form class="ml-auo space-y-4">
                             <label>
                                 <input type='text' placeholder='Имя'
-                                       class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff] mb-4" />
+                                       class="w-full rounded-md py-2.5 px-4 border text-sm outline-accent mb-4" />
                             </label>
-                            <label for="email" class="mb-5">
-                              <input class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+                            <label for="email" class="mb-4">
+                              <input class="w-full rounded-md py-2.5 px-4 border text-sm outline-accent"
                                 type="email"
                                 name="email"
                                 id="email"
@@ -329,7 +343,7 @@
                               </span>
                             </label>
                             <textarea placeholder='Сообщение' rows="6"
-                                   class="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"></textarea>
+                                   class="w-full rounded-md px-4 border text-sm pt-2.5 outline-accent"></textarea>
                             <button class="btn btn-primary w-full justify-center mx-auto xl:mx-0 shadow-xl">ОТПРАВИТЬ <i class="ri-arrow-right-s-line text-accent"></i></button>
                         </form>
                     </div>
@@ -346,7 +360,7 @@
                         </a>
                     </div>
                     <div>
-                        <ul class="flex flex-col xl:flex-row items-center justify-center transition-all duration-300 gap-5 mb-10">
+                        <ul class="flex flex-col xl:flex-row items-center justify-center transition-all duration-300 gap-5 mb-8">
                             <li class="text-slate-50"><a href="#about-me">О нас</a></li>
                             <li class="text-slate-50"><a href="#best">Лучшие туры</a></li>
                             <li class="text-slate-50"><a href="#otziv">Отзывы</a></li>
@@ -360,6 +374,5 @@
             </div>
         </section>
     </main>
-    <!--Конец первой секции-->
 </body>
 </html>

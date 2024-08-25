@@ -58,10 +58,6 @@ sr.reveal('.contact__grid', {delay: 220});
 
 sr.reveal('.footer__item', {delay: 220});
 
-const img = new Image();
-img.fetchPriority = "high";
-img.src = "img/Main-img.avif";
-
 document.addEventListener("DOMContentLoaded", function() {
     const button = document.querySelector('button[aria-pressed]');
 
@@ -69,4 +65,23 @@ document.addEventListener("DOMContentLoaded", function() {
         const isPressed = this.getAttribute('aria-pressed') === 'true';
         this.setAttribute('aria-pressed', !isPressed);
     });
+});
+
+// lazyLoadImage
+
+const images = document.querySelectorAll("img[data-src]");
+
+function loadImg(entries, observer) {
+  if (!entries[0].isIntersecting) return;
+  entries[0].target.src = entries[0].target.dataset.src;
+
+  entries[0].target.addEventListener("load", function () {
+    entries[0].target.classList.remove("blur-lg");
+  });
+  observer.unobserve(entries[0].target);
+}
+const imgObserver = new IntersectionObserver(loadImg, { threshold: 0.15 });
+
+images.forEach((img) => {
+  imgObserver.observe(img);
 });
