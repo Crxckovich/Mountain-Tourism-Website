@@ -85,3 +85,33 @@ const imgObserver = new IntersectionObserver(loadImg, { threshold: 0.15 });
 images.forEach((img) => {
   imgObserver.observe(img);
 });
+
+
+// smoothScrollWithOffset
+const aboutBtns = document.querySelectorAll('.about');
+const bestBtns = document.querySelectorAll('.best');
+const reviewBtns = document.querySelectorAll('.review');
+const contactBtns = document.querySelectorAll('.contact');
+
+function scrollToTargetAdjusted(section) {
+    const element = document.getElementById(section)
+    let headerOffset = 115;
+    if (element.id === 'contact') {
+        if (window.innerWidth >= 640) {
+            headerOffset = -120
+        }
+        headerOffset = 65
+    }
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
+}
+
+aboutBtns.forEach(btn => btn.addEventListener('click', () => scrollToTargetAdjusted('about-me')));
+bestBtns.forEach(btn => btn.addEventListener('click', () => scrollToTargetAdjusted('best')));
+reviewBtns.forEach(btn => btn.addEventListener('click', () => scrollToTargetAdjusted('review')));
+contactBtns.forEach(btn => btn.addEventListener('click', () => scrollToTargetAdjusted('contact')));

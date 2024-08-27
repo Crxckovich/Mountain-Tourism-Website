@@ -17,7 +17,7 @@
 }
 
 html {
-  @apply scroll-smooth focus:scroll-auto;
+  @apply focus:scroll-auto;
 }
 
 body {

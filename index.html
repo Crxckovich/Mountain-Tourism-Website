@@ -32,7 +32,7 @@
     <!--Первая секция-->
     <main class="max-w-[1920px] mx-auto bg-slate-50 overflow-hidden">
         <!--header-->
-        <header class="relative top-0 h-[90px] z-30 bg-slate-50 shadow-xl">
+        <header id="header" class="relative top-0 h-[90px] z-30 bg-slate-50 shadow-xl">
             <div class="container mx-auto flex justify-between h-full items-center header">
                 <a href="#">
                     <img src="img/icons/Logo.svg" alt="Изображение логотипа">
@@ -50,10 +50,13 @@
                     </div>
                     <ul class="absolute w-full h-0 p-0 overflow-hidden top-[90px] bg-slate-50 left-0 right-0 flex flex-col gap-5
                     lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300" id="nav_menu">
-                        <li><a href="#about-me">О нас</a></li>
-                        <li><a href="#best">Лучшие туры</a></li>
-                        <li><a href="#otziv">Отзывы</a></li>
-                        <li><a href="#bron"><span class="border-b-4 border-[#2CA9BC]">Забронировать</span></a></li>
+                        <li><a class="cursor-pointer about">О нас</a></li>
+                        <li><a class="cursor-pointer best">Лучшие туры</a></li>
+                        <li><a class="cursor-pointer review">Отзывы</a></li>
+                        <li><a class="cursor-pointer contact">
+                            <span class="border-b-4 border-[#2CA9BC]">
+                                Забронировать
+                            </span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -203,7 +206,7 @@
             </div>
         </section>
         <!--Reviews-->
-        <section id="otziv" class="otziv relative z-20 mb-[80px]">
+        <section id="review" class="otziv relative z-20 mb-[80px]">
             <div class="otziv__bg container mx-auto bg-accent rounded-2xl px-6 shadow-xl">
                 <div class="flex flex-col items-center pt-[88px] pb-[110px]">
                     <h2 class="otziv__text h2 mb-8 text-center">Что говорят наши клиенты 😊</h2>
@@ -282,7 +285,7 @@
             </div>
         </section>
         <!--Contact-->
-        <section id="bron" class="bg-secondary contact h-[1080px] xl:h-[840px] relative z-20">
+        <section id="contact" class="bg-secondary contact h-[1080px] xl:h-[840px] relative z-20">
             <video class="pointer-events-none absolute inset-0 w-full h-full object-cover brightness-75" autoplay loop muted playsinline>
                 <source src="img/Video.webm" type="video/webm">
                 <source src="img/Video.mp4" type="video/mp4">
@@ -361,10 +364,12 @@
                     </div>
                     <div>
                         <ul class="flex flex-col xl:flex-row items-center justify-center transition-all duration-300 gap-5 mb-8">
-                            <li class="text-slate-50"><a href="#about-me">О нас</a></li>
-                            <li class="text-slate-50"><a href="#best">Лучшие туры</a></li>
-                            <li class="text-slate-50"><a href="#otziv">Отзывы</a></li>
-                            <li class="text-slate-50"><a href="#bron"><span class="border-b-4 border-[#2CA9BC]">Забронировать</span></a></li>
+                            <li><a class="text-slate-50 cursor-pointer about">О нас</a></li>
+                            <li><a class="text-slate-50 cursor-pointer best">Лучшие туры</a></li>
+                            <li><a class="text-slate-50 cursor-pointer review">Отзывы</a></li>
+                            <li><a class="text-slate-50 cursor-pointer contact">
+                                <span class="border-b-4 border-[#2CA9BC]">
+                                    Забронировать</span></a></li>
                         </ul>
                         <ul class="flex flex-col xl:flex-row items-center justify-center transition-all duration-300 gap-5">
                             <li class="select-none text-slate-50">© Все права защищены</li>
