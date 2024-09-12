@@ -115,3 +115,22 @@ aboutBtns.forEach(btn => btn.addEventListener('click', () => scrollToTargetAdjus
 bestBtns.forEach(btn => btn.addEventListener('click', () => scrollToTargetAdjusted('best')));
 reviewBtns.forEach(btn => btn.addEventListener('click', () => scrollToTargetAdjusted('review')));
 contactBtns.forEach(btn => btn.addEventListener('click', () => scrollToTargetAdjusted('contact')));
+
+
+const email = document.getElementById('email');
+const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/; // Регулярное выражение
+
+email.addEventListener('input', (e) => {
+  const str = e.target.value;
+  const result = emailPattern.test(str); // Используем переменную
+
+  console.log(result);
+
+  if (result) {
+    e.target.classList.remove('outline-secondary-error');
+    e.target.classList.add('outline-accent');
+  } else {
+    e.target.classList.remove('outline-accent');
+    e.target.classList.add('outline-secondary-error');
+  }
+});

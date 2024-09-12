@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link fetchpriority rel="stylesheet" href="css/output.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"/>
+    <title>Горный туризм</title>
+    <meta name="description" content="Лучшие горные туры по России">
 
+    <!-- Link to stylesheets -->
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+
+    <!-- Favicon links -->
     <link rel="apple-touch-icon" sizes="144x144" href="img/Fav-icon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/Fav-icon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/Fav-icon/apple-icon-180x180.png">
@@ -20,19 +25,18 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Deferred scripts -->
     <script defer src="js/cdn.min.js"></script>
     <script defer src="js/scrollreveal.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
-
-    <title>Горный туризм</title>
-    <meta name="description" content="Лучшие горные туры по России">
+    <script defer src="js/vanilla-tilt.min.js"></script>
 </head>
 <body class="bg-slate-50">
     <!--Первая секция-->
     <main class="max-w-[1920px] mx-auto bg-slate-50 overflow-hidden">
         <!--header-->
-        <header id="header" class="relative top-0 h-[90px] z-30 bg-slate-50 shadow-xl">
+        <header class="relative top-0 h-[90px] z-30 bg-slate-50 shadow-xl">
             <div class="container mx-auto flex justify-between h-full items-center header">
                 <a href="#">
                     <img src="img/icons/Logo.svg" alt="Изображение логотипа">
@@ -84,7 +88,7 @@
                         <a href="#">УЗНАТЬ БОЛЬШЕ <i class="ri-arrow-right-s-line text-accent"></i></a>
                     </div>
                     <div class="about__img flex-2 flex-col max-w-[460px] order-2 xl:order-none">
-                        <div class="mb-8 shadow xl:hover:shadow-lg transition-all xl:hover:-translate-y-3 duration-300">
+                        <div class="mb-[64px] shadow xl:hover:shadow-lg transition-all xl:hover:-translate-y-3 duration-300">
                             <img src="img/gora1-min.avif"
                                  data-src="img/gora1.avif"
                                  alt="Изображение горы" loading="lazy" class="blur-lg">
@@ -103,35 +107,35 @@
             <div class="container mx-auto h-full flex items-center justify-center">
                 <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-2 lg:gap-x-4 xl:grid-cols-4">
                     <!--Карточка-->
-                    <div class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
-                        <div>
+                    <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                        <div class="mb-3">
                             <img src="img/icons/earth-fill.svg" alt="">
                         </div>
-                        <h3 class="h3 mb-[8px]">ПРИКЛЮЧЕНИЕ</h3>
+                        <h3 class="h3 mb-1">ПРИКЛЮЧЕНИЕ</h3>
                         <p class="leading-normal max-w-[300px]">Товарищи! Задача организации способствует подготовки и реализации новых предложений.</p>
                     </div>
                     <!--Карточка-->
-                    <div class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
-                        <div>
+                    <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                        <div class="mb-3">
                             <img src="img/icons/map-pin-fill.svg" alt="">
                         </div>
-                        <h3 class="h3 mb-[8px]">ПРИКЛЮЧЕНИЕ</h3>
+                        <h3 class="h3 mb-1">ЛАГЕРЬ</h3>
                         <p class="leading-normal max-w-[300px]">Товарищи! Задача организации способствует подготовки и реализации новых предложений.</p>
                     </div>
                     <!--Карточка-->
-                    <div class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
-                        <div>
+                    <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                        <div class="mb-3">
                             <img src="img/icons/compass-fill.svg" alt="">
                         </div>
-                        <h3 class="h3 mb-[8px]">МАРШРУТ</h3>
+                        <h3 class="h3 mb-1">МАРШРУТ</h3>
                         <p class="leading-normal max-w-[300px]">Товарищи! Задача организации способствует подготовки и реализации новых предложений.</p>
                     </div>
                     <!--Карточка-->
-                    <div class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
-                        <div>
+                    <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" class="card__item ring-1 ring-slate-900/5 bg-slate-50 p-[30px] rounded-2xl flex flex-col items-center text-center shadow-xl">
+                        <div class="mb-3">
                             <img src="img/icons/flag-fill.svg" alt="">
                         </div>
-                        <h3 class="h3 mb-[8px]">ПИТАНИЕ</h3>
+                        <h3 class="h3 mb-1">ПИТАНИЕ</h3>
                         <p class="leading-normal max-w-[300px]">Товарищи! Задача организации способствует подготовки и реализации новых предложений.</p>
                     </div>
                 </div>
@@ -294,7 +298,7 @@
                 <div>
                     <div class="contact__grid ring-1 ring-slate-900/5 grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto bg-white bg-opacity-50 backdrop-blur-lg shadow-xl rounded-xl text-[#333]">
                         <div>
-                            <h2 class="h4 mb-4">ЗАБРОНИРОВАТЬ ТУР</h2>
+                            <h2 class="h2 mb-4">ЗАБРОНИРОВАТЬ ТУР</h2>
                             <p class="text-primary leading-normal">Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации новых предложений.</p>
                             <div class="mt-12">
                                 <h2 class="text-lg">Почта</h2>
@@ -332,15 +336,14 @@
                                        class="w-full rounded-md py-2.5 px-4 border text-sm outline-accent mb-4" />
                             </label>
                             <label for="email" class="mb-4">
-                              <input class="w-full rounded-md py-2.5 px-4 border text-sm outline-accent"
+                              <input class="w-full rounded-md py-2.5 px-4 border text-sm outline-secondary-error transition-all duration-300"
                                 type="email"
                                 name="email"
                                 id="email"
                                 class="... peer"
                                 placeholder="Почта"
                                 required
-                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                              />
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
                               <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
                                 Напишите правильный адрес почты
                               </span>

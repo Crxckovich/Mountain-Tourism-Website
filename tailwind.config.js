@@ -33,6 +33,7 @@ module.exports = {
         },
         secondary: {
           DEFAULT: '#5b5b5b',
+          error: '#FF214A'
         },
         accent : {
           DEFAULT: '#2CA9BC',

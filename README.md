@@ -1,3 +1,7 @@
-Сайт горного туризма был сделан ❗ПОЧТИ❗ по макету курса "Верстка и веб-разработка сайтов. Продвинутый уровень Web Develop" от Дмитрия Фокеева
+# [Mountain Tourism Landing Website](https://crxckovich.github.io/Mountain-Tourism-Website/)
 
-Сайт: https://crxckovich.github.io/MountainTourismSite/
+[![Alt-текст](https://i.postimg.cc/jqMZxHbz/Desktop-1.png)](https://crxckovich.github.io/Mountain-Tourism-Website/)
+
+<div align="center">
+<img src="https://skillicons.dev/icons?i=figma,pycharm,html,css,tailwind,js" />
+</div>
