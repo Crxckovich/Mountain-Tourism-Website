@@ -664,6 +664,10 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .mb-24{
   margin-bottom: 6rem;
 }
@@ -682,10 +686,6 @@ video {
 
 .mb-8{
   margin-bottom: 2rem;
-}
-
-.mb-\[64px\]{
-  margin-bottom: 64px;
 }
 
 .mb-\[80px\]{
@@ -800,10 +800,6 @@ video {
   max-width: 1920px;
 }
 
-.max-w-\[20rem\]{
-  max-width: 20rem;
-}
-
 .max-w-\[24rem\]{
   max-width: 24rem;
 }
@@ -874,10 +870,6 @@ video {
   justify-content: space-between;
 }
 
-.justify-items-start{
-  justify-items: start;
-}
-
 .gap-1{
   gap: 0.25rem;
 }
@@ -929,6 +921,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.break-all{
+  word-break: break-all;
 }
 
 .rounded{
@@ -1116,6 +1112,10 @@ video {
 
 .pt-\[88px\]{
   padding-top: 88px;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -1572,8 +1572,8 @@ h1, h2, h3, h4, h5, h6{
     height: 840px;
   }
 
-  .xl\:max-w-\[510px\]{
-    max-width: 510px;
+  .xl\:max-w-\[500px\]{
+    max-width: 500px;
   }
 
   .xl\:grid-cols-3{
@@ -1594,6 +1594,11 @@ h1, h2, h3, h4, h5, h6{
 
   .xl\:gap-\[13px\]{
     gap: 13px;
+  }
+
+  .xl\:break-normal{
+    overflow-wrap: normal;
+    word-break: normal;
   }
 
   .xl\:bg-cards{
